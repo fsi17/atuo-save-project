@@ -1,0 +1,41 @@
+# Default ignore rules for the reusable uploader.
+# A folder named source is NOT excluded; virtual environments are detected by pyvenv.cfg.
+.github-sync/
+.git/
+github-upload.json
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+node_modules/
+.worktrees/
+.edge-preview-hd/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Model weights, compressed packages, generated binary arrays and logs
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.zip
+*.7z
+*.tar
+*.gz
+*.npz
+*.npy
+*.log
+*.tmp
+*.part
